@@ -1,0 +1,8 @@
+class Solution:
+    def hasDuplicate(self, nums: List[int]) -> bool:
+        lookup = set()
+        for x in nums:
+            if x in lookup:
+                return True
+            lookup.add(x)
+        return False 
